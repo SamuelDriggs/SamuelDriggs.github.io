@@ -69,7 +69,6 @@ h1, h2, h3, h4 {
     background-color: #ff8c44;
     text-align: center;
     padding: 10px 0;
-    margin: 10px;
     position: fixed;
     width: 100%;
     border-bottom: 3px solid #4a4a4a;
@@ -136,7 +135,7 @@ nav > ul > li > a:active {
   text-transform: uppercase;
 }
 .logo {
-  max-width: 250px;
+  width: 20%;
 }
 nav > ul {
   list-style-type: none;
