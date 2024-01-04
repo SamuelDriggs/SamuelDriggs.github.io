@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
     width: 100%;
   }
   a {
-    color: #ff7f50;
+    color: #ffffff;
     text-decoration: none; /* No underlining */
   }
   a:hover,
@@ -53,13 +53,7 @@ h1, h2, h3, h4 {
   background-color: #ff7f50;
   color: #ffffff;
 }
-#header {
-  background-color: rgb(251, 251, 251);
-  color: black;
-  padding: 40px;
-  text-align: center;
-}
-#main {
+#hero {
     background-color: rgb(251, 251, 251);
     color: black;
     padding: 40px;
@@ -71,6 +65,54 @@ h1, h2, h3, h4 {
     padding: 40px;
     text-align: center;
   }
+  header {
+    background-color: #ff8c44;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 3px solid #4a4a4a;
+    /*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+  }
+  selector {
+    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  }
+  selector {
+    width: 80%;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  #work .row {
+    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  } 
+  #hero h1 {
+    text-align: center; /* Centers text */
+  }
+  #hero {
+    background-color: #ff8c44;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  main {
+    padding-top: 133px;
+  }
+* {
+  box-sizing: border-box;
+}
+/* Layout styling */
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
@@ -80,4 +122,32 @@ h1, h2, h3, h4 {
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
+}
+nav > ul > li > a:visited {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+nav > ul > li > a:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+nav > ul > li > a:active {
+  color: #ff7f50;
+  text-transform: uppercase;
+}
+.logo {
+  max-width: 250px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 }
