@@ -13,12 +13,10 @@ h1, h2, h3, h4 {
     font-size: 2.75em;
     font-weight: 700;
   }
-  
   h2 {
     font-size: 2.25em;
     font-weight: 700;
   }
-  
   h3 {
     font-size: 1.75em;
     font-weight: 400;
@@ -87,9 +85,7 @@ h1, h2, h3, h4 {
   selector {
     width: 80%;
   }
-  .container {
-    max-width: 1200px;
-  }
+ 
   #work .row {
     padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
   } 
@@ -102,9 +98,7 @@ h1, h2, h3, h4 {
     display: inline-block;
     width: 100%;
   }
-  main {
-    padding-top: 133px;
-  }
+ 
 * {
   box-sizing: border-box;
 }
@@ -135,6 +129,9 @@ nav > ul > li > a:active {
   text-transform: uppercase;
 }
 .logo {
+  width: 60%;
+}
+.social {
   width: 20%;
 }
 nav > ul {
@@ -149,4 +146,26 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+main {
+  padding-top: 160px;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15;
 }
