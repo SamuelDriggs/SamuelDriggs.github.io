@@ -217,9 +217,7 @@ main {
   animation-timing-function: linear;
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
+
 
 
 
