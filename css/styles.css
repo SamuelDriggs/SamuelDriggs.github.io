@@ -29,8 +29,9 @@ h1, h2, h3, h4 {
     width: 100%;
   }
   a {
-    color: #ffffff;
+    color: #242222;
     text-decoration: none; /* No underlining */
+    text-decoration: underline
   }
   a:hover,
   a:focus {
@@ -215,6 +216,10 @@ main {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+
+p {
+  margin: 35px;
 }
 
 
