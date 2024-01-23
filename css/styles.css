@@ -63,8 +63,7 @@ h1, h2, h3, h4 {
   }
   header {
     background-color: #ff8c44;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 4px;
     position: fixed;
     width: 100%;
     border-bottom: 3px solid #4a4a4a;
@@ -139,6 +138,7 @@ nav > ul > li > a:active {
 }
 .logo {
   width: 20%;
+  max-width: 150px;
 }
 .social {
   width: 20%;
@@ -146,10 +146,9 @@ nav > ul > li > a:active {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -169,7 +168,7 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 99px;
+  padding-top: 56px;
 }
 .container {
   max-width: 1200px;
@@ -181,6 +180,11 @@ main {
   max-width: 100%;
   height: auto;
 }
+
+
+
+
+
 
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -223,6 +227,34 @@ p {
 }
 
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+
+.navtoggle.responsive nav {
+  position: relative;
+  padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 
 
@@ -250,7 +282,30 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .logo {
+    width: 20%;
+  }
 
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+
+  nav > ul {
+    margin: 1em 0;
+  }
 
 
 
